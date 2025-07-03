@@ -1,0 +1,82 @@
+🧍‍♂️ paciente
+nome_social VARCHAR(100) – para pessoas trans ou que usam outro nome.
+
+rg VARCHAR(20) – documento adicional.
+
+estado_civil VARCHAR(20) – relevante em casos de dependentes ou contato.
+
+nome_mae VARCHAR(100) – comum em cadastros de saúde.
+
+nacionalidade VARCHAR(50) – para controle de estrangeiros.
+
+🏠 endereco_*
+bairro VARCHAR(100)
+
+cidade VARCHAR(100)
+
+estado VARCHAR(2)
+
+pais VARCHAR(50) – especialmente útil para convênios ou pacientes estrangeiros.
+
+📞 telefone_*
+tipo VARCHAR(10) – ex: 'Residencial', 'Celular', 'Trabalho'.
+
+🏥 convenio
+telefone CHAR(11) – além da tabela separada.
+
+responsavel_contato VARCHAR(100) – pessoa de contato direta.
+
+validade_contrato DATE – quando expira o vínculo com o hospital.
+
+👨‍⚕️ funcionario
+cargo VARCHAR(50) – além de turno.
+
+data_admissao DATE
+
+salario DECIMAL(10,2) – se for gerenciar folha.
+
+ativo BOOLEAN – funcionário desligado pode permanecer no histórico.
+
+📑 exame
+descricao VARCHAR(1000) – informações adicionais.
+
+prioridade VARCHAR(10) – ‘Alta’, ‘Normal’, ‘Baixa’.
+
+preparo VARCHAR(1000) – instruções para o paciente.
+
+🧪 resultado
+responsavel_analise CHAR(11) – CPF do profissional que analisou.
+
+observacoes VARCHAR(1000) – comentários adicionais.
+
+assinatura_digital VARCHAR(255) – hash/código para validar.
+
+💉 diagnostico
+gravidade VARCHAR(20) – ex: 'Leve', 'Moderada', 'Grave'.
+
+cid10 VARCHAR(10) – código padrão de doenças.
+
+profissional CHAR(11) – quem emitiu (pode ser médico ou equipe).
+
+📆 agendamento
+data_criacao TIMESTAMP
+
+justificativa_cancelamento VARCHAR(500) – se status for "Cancelado".
+
+🏥 sala_exame
+andar VARCHAR(2) – localização.
+
+descricao VARCHAR(100) – ex: “sala com equipamento de raio-x”.
+
+capacidade INT – se for multiuso ou exames em grupo.
+
+🔄 realiza
+observacoes VARCHAR(1000) – sobre dificuldades, reações, etc.
+
+🧑‍⚕️ medico e enfermeiro
+especializacao_principal VARCHAR(50) – para facilitar buscas.
+
+data_registro DATE – desde quando atua.
+
+ativo BOOLEAN – controle de inatividade sem excluir dados.
+
