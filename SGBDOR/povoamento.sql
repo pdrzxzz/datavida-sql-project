@@ -1,0 +1,448 @@
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('11111111111', 'Ana Souza', 'ana@example.com', DATE '1990-05-10', 'Mulher',
+    TP_ENDERECO('12345678', 'Apto 101', '100'),
+    TP_TELEFONES('11999999999')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('22222222222', 'Carlos Silva', 'carlos@example.com', DATE '1985-08-20', 'Homem',
+    TP_ENDERECO('87654321', 'Casa', '50'),
+    TP_TELEFONES('11888888888')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('33333333333', 'João Pedro', 'joao@example.com', DATE '1992-03-12', 'Homem',
+    TP_ENDERECO('55555555', 'Fundos', '25'),
+    TP_TELEFONES('11777777777')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('44444444444', 'Larissa Alves', 'larissa@example.com', DATE '2000-09-01', 'Mulher',
+    TP_ENDERECO('99999999', 'Ap 3', '15'),
+    TP_TELEFONES('11666666666')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('55555555555', 'Mariana Lima', 'mariana@example.com', DATE '1988-12-05', 'Mulher',
+    TP_ENDERECO('11112222', 'Casa', '101'),
+    TP_TELEFONES('11988887777')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('66666666666', 'Roberto Castro', 'roberto@example.com', DATE '1977-07-17', 'Homem',
+    TP_ENDERECO('22223333', 'Ap 102', '102'),
+    TP_TELEFONES('11877776666')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('77777777777', 'Fernanda Souza', 'fernanda@example.com', DATE '1995-02-28', 'Mulher',
+    TP_ENDERECO('33334444', 'Fundos', '103'),
+    TP_TELEFONES('11766665555')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('88888888888', 'André Gomes', 'andre@example.com', DATE '1983-11-11', 'Homem',
+    TP_ENDERECO('44445555', 'Bloco C', '104'),
+    TP_TELEFONES('11655554444')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('99999999999', 'Cláudia Santos', 'claudia@example.com', DATE '1990-10-30', 'Mulher',
+    TP_ENDERECO('55556666', 'Sala 1', '105'),
+    TP_TELEFONES('11544443333')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('10101010101', 'Paulo Almeida', 'paulo@example.com', DATE '1985-06-21', 'Homem',
+    TP_ENDERECO('66667777', 'Casa', '106'),
+    TP_TELEFONES('11433332222')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('12121212121', 'Julia Fernandes', 'julia@example.com', DATE '1993-09-09', 'Mulher',
+    TP_ENDERECO('77778888', 'Ap 201', '107'),
+    TP_TELEFONES('11322221111')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('13131313131', 'Carlos Eduardo', 'carlosedu@example.com', DATE '1980-01-15', 'Homem',
+    TP_ENDERECO('88889999', 'Fundos', '108'),
+    TP_TELEFONES('11211110000')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('14141414141', 'Beatriz Melo', 'beatriz@example.com', DATE '1998-03-03', 'Mulher',
+    TP_ENDERECO('99990000', 'Bloco D', '109'),
+    TP_TELEFONES('11100009999')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('15151515151', 'Ricardo Lopes', 'ricardo@example.com', DATE '1975-04-27', 'Homem',
+    TP_ENDERECO('10101010', 'Ap 301', '110'),
+    TP_TELEFONES('11099998888')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('16161616161', 'Ana Clara', 'anaclara@example.com', DATE '1999-12-12', 'Mulher',
+    TP_ENDERECO('11112121', 'Casa', '111'),
+    TP_TELEFONES('11988887766')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('17171717171', 'Vitor Hugo', 'vitor@example.com', DATE '1987-08-08', 'Homem',
+    TP_ENDERECO('12121212', 'Sala 2', '112'),
+    TP_TELEFONES('11877776655')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('18181818181', 'Isabela Ribeiro', 'isabela@example.com', DATE '1991-05-05', 'Mulher',
+    TP_ENDERECO('13131313', 'Fundos', '113'),
+    TP_TELEFONES('11766665544')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('19191919191', 'Thiago Martins', 'thiago@example.com', DATE '1984-03-25', 'Homem',
+    TP_ENDERECO('14141414', 'Ap 401', '114'),
+    TP_TELEFONES('11655554433')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('20202020202', 'Marina Dias', 'marina@example.com', DATE '1996-07-14', 'Mulher',
+    TP_ENDERECO('15151515', 'Bloco E', '115'),
+    TP_TELEFONES('11544443322')
+  )
+);
+INSERT INTO TB_PACIENTE VALUES (
+  TP_PACIENTE('21212121212', 'Felipe Nunes', 'felipe@example.com', DATE '1989-09-19', 'Homem',
+    TP_ENDERECO('16161616', 'Casa', '116'),
+    TP_TELEFONES('11433332211')
+  )
+);
+
+INSERT INTO TB_CONVENIO VALUES (
+  TP_CONVENIO(1, 'Saúde Total', 'Unimed', 'Ativo', 'contato@saudetotal.com', 'ANS123456', '12345678000199',
+    TP_ENDERECO('11223344', 'Torre A', '10'),
+    TP_TELEFONES('1133333333')
+  )
+);
+INSERT INTO TB_CONVENIO VALUES (
+  TP_CONVENIO(2, 'Vida Plena', 'Amil', 'Ativo', 'contato@vidaplena.com', 'ANS654321', '98765432000188',
+    TP_ENDERECO('44332211', 'Bloco B', '20'),
+    TP_TELEFONES('1144444444')
+  )
+);
+INSERT INTO TB_CONVENIO VALUES (
+  TP_CONVENIO(3, 'Bem Viver', 'Bradesco Saúde', 'Ativo', 'contato@bemviver.com', 'ANS000111', '11122233000177',
+    TP_ENDERECO('77776666', 'Conj. C', '30'),
+    TP_TELEFONES('1155555555')
+  )
+);
+INSERT INTO TB_CONVENIO VALUES (
+  TP_CONVENIO(4, 'Saúde Bem', 'Unimed', 'Ativo', 'contato@saudebem.com', 'ANS789012', '32165498000155',
+    TP_ENDERECO('22221111', 'Bloco F', '40'),
+    TP_TELEFONES('1166666666')
+  )
+);
+INSERT INTO TB_CONVENIO VALUES (
+  TP_CONVENIO(5, 'Mais Vida', 'Bradesco', 'Ativo', 'contato@maisvida.com', 'ANS210987', '65498732000144',
+    TP_ENDERECO('33332222', 'Torre B', '50'),
+    TP_TELEFONES('1177777777')
+  )
+);
+INSERT INTO TB_CONVENIO VALUES (
+  TP_CONVENIO(6, 'Clínica Vida', 'Amil', 'Ativo', 'contato@clinicavida.com', 'ANS345678', '98732165000133',
+    TP_ENDERECO('44443333', 'Conj. D', '60'),
+    TP_TELEFONES('1188888888')
+  )
+);
+
+INSERT INTO TB_ATENDENTE VALUES (
+  TP_ATENDENTE('31313131313', 'Renata Alves', DATE '1992-04-10', 'Mulher', 'Manhã', 'renata@clinic.com',
+    TP_ENDERECO('12121212', 'Ap 12', '120'),
+    TP_TELEFONES('11999998888')
+  )
+);
+INSERT INTO TB_ATENDENTE VALUES (
+  TP_ATENDENTE('32323232323', 'Gustavo Oliveira', DATE '1987-12-22', 'Homem', 'Tarde', 'gustavo@clinic.com',
+    TP_ENDERECO('13131313', 'Casa', '121'),
+    TP_TELEFONES('11888887777')
+  )
+);
+
+INSERT INTO TB_ENFERMEIRO VALUES (
+  TP_ENFERMEIRO('95959595959', 'Caroline Dias', DATE '1994-07-17', 'Mulher', 'Noite', 'caroline@clinic.com',
+    TP_ENDERECO('14141414', 'Sala 10', '122'),
+    TP_TELEFONES('11777776666'),
+    'COREN33333',
+    TP_ESPECIALIDADES('Enfermagem Geral')
+  )
+);
+INSERT INTO TB_ENFERMEIRO VALUES (
+  TP_ENFERMEIRO('34343434343', 'Felipe Moreira', DATE '1985-09-30', 'Homem', 'Manhã', 'felipe@clinic.com',
+    TP_ENDERECO('15151515', 'Bloco F', '123'),
+    TP_TELEFONES('11666665555'),
+    'COREN44444',
+    TP_ESPECIALIDADES('Urgência')
+  )
+);
+
+INSERT INTO TB_MEDICO VALUES (
+  TP_MEDICO('91919191919', 'Lucas Rocha', DATE '1995-11-12', 'Homem', 'Noite', 'lucas@clinic.com',
+    TP_ENDERECO('77777777', 'Apto 5', '78'),
+    TP_TELEFONES('1155555555'),
+    'CRM123456',
+    TP_ESPECIALIDADES('Cardiologia')
+  )
+);
+INSERT INTO TB_MEDICO VALUES (
+  TP_MEDICO('92929292929', 'Carla Dias', DATE '1990-04-08', 'Mulher', 'Manhã', 'carla@clinic.com',
+    TP_ENDERECO('22222222', 'Bloco 4', '22'),
+    TP_TELEFONES('1166666666'),
+    'CRM654321',
+    TP_ESPECIALIDADES('Neurologia')
+  )
+);
+INSERT INTO TB_MEDICO VALUES (
+  TP_MEDICO('93939393939', 'Pedro Santos', DATE '1983-01-22', 'Homem', 'Tarde', 'pedro@clinic.com',
+    TP_ENDERECO('33333333', 'Sala 7', '300'),
+    TP_TELEFONES('1177777777'),
+    'CRM101010',
+    TP_ESPECIALIDADES('Endocrinologia')
+  )
+);
+INSERT INTO TB_MEDICO VALUES (
+  TP_MEDICO('94949494949', 'Juliana Paz', DATE '1996-06-15', 'Mulher', 'Noite', 'juliana@clinic.com',
+    TP_ENDERECO('44444444', 'Cobertura', '400'),
+    TP_TELEFONES('1188888888'),
+    NULL,
+    NULL
+  )
+);
+INSERT INTO TB_MEDICO VALUES (
+  TP_MEDICO('35353535353', 'Amanda Costa', DATE '1990-03-11', 'Mulher', 'Tarde', 'amanda@clinic.com',
+    TP_ENDERECO('16161616', 'Ap 21', '124'),
+    TP_TELEFONES('11555554444'),
+    'CRM777777',
+    TP_ESPECIALIDADES('Ortopedia')
+  )
+);
+INSERT INTO TB_MEDICO VALUES (
+  TP_MEDICO('36363636363', 'Rodrigo Souza', DATE '1983-08-21', 'Homem', 'Noite', 'rodrigo@clinic.com',
+    TP_ENDERECO('17171717', 'Cobertura', '125'),
+    TP_TELEFONES('11444443333'),
+    'CRM888888',
+    TP_ESPECIALIDADES('Pediatria')
+  )
+);
+INSERT INTO TB_MEDICO VALUES (
+  TP_MEDICO('37373737373', 'Larissa Pinto', DATE '1997-05-25', 'Mulher', 'Manhã', 'larissa@clinic.com',
+    TP_ENDERECO('18181818', 'Sala 15', '126'),
+    TP_TELEFONES('11333332222'),
+    'CRM999999',
+    TP_ESPECIALIDADES('Dermatologia')
+  )
+);
+
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '11111111111'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 1),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '22222222222'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 2),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '33333333333'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 1),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '44444444444'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 3),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '55555555555'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 4),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '66666666666'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 5),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '77777777777'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 6),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '88888888888'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 1),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '99999999999'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 2),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '10101010101'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 3),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '12121212121'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 4),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '13131313131'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 5),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '14141414141'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 6),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '15151515151'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 1),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '16161616161'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 2),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '17171717171'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 3),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '18181818181'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 4),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '19191919191'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 5),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '20202020202'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 6),
+  SYSTIMESTAMP
+);
+INSERT INTO TB_PACIENTE_CONVENIO VALUES (
+  (SELECT REF(P) FROM TB_PACIENTE P WHERE P.cpf_paciente = '21212121212'),
+  (SELECT REF(C) FROM TB_CONVENIO C WHERE C.id_convenio = 1),
+  SYSTIMESTAMP
+);
+
+INSERT INTO TB_SALA_EXAME VALUES (TP_SALA_EXAME('101', 'Cardiologia', 'Disponível'));
+INSERT INTO TB_SALA_EXAME VALUES (TP_SALA_EXAME('102', 'Neurologia', 'Disponível'));
+INSERT INTO TB_SALA_EXAME VALUES (TP_SALA_EXAME('103', 'Ortopedia', 'Em Manutenção'));
+INSERT INTO TB_SALA_EXAME VALUES (TP_SALA_EXAME('104', 'Ortopedia', 'Disponível'));
+INSERT INTO TB_SALA_EXAME VALUES (TP_SALA_EXAME('105', 'Pediatria', 'Disponível'));
+INSERT INTO TB_SALA_EXAME VALUES (TP_SALA_EXAME('106', 'Dermatologia', 'Disponível'));
+INSERT INTO TB_SALA_EXAME VALUES (TP_SALA_EXAME('107', 'Endocrinologia', 'Disponível'));
+INSERT INTO TB_SALA_EXAME VALUES (TP_SALA_EXAME('108', 'Cardiologia', 'Em Manutenção'));
+INSERT INTO TB_SALA_EXAME VALUES (TP_SALA_EXAME('109', 'Neurologia', 'Disponível'));
+
+INSERT INTO TB_EXAME (id_exame, tipo, solicitante_ref, resultado_conteudo, resultado_data_emissao)
+VALUES (1, 'Eletrocardiograma', (SELECT REF(M) FROM TB_MEDICO M WHERE M.cpf_funcionario = '91919191919'), NULL, NULL);
+INSERT INTO TB_EXAME (id_exame, tipo, solicitante_ref, resultado_conteudo, resultado_data_emissao)
+VALUES (2, 'EEG', (SELECT REF(M) FROM TB_MEDICO M WHERE M.cpf_funcionario = '92929292929'), NULL, NULL);
+INSERT INTO TB_EXAME (id_exame, tipo, solicitante_ref, resultado_conteudo, resultado_data_emissao)
+VALUES (3, 'Raio-X', (SELECT REF(M) FROM TB_MEDICO M WHERE M.cpf_funcionario = '35353535353'), NULL, NULL);
+INSERT INTO TB_EXAME (id_exame, tipo, solicitante_ref, resultado_conteudo, resultado_data_emissao)
+VALUES (4, 'Exame de Sangue', (SELECT REF(M) FROM TB_MEDICO M WHERE M.cpf_funcionario = '36363636363'), NULL, NULL);
+INSERT INTO TB_EXAME (id_exame, tipo, solicitante_ref, resultado_conteudo, resultado_data_emissao)
+VALUES (5, 'Biópsia', (SELECT REF(M) FROM TB_MEDICO M WHERE M.cpf_funcionario = '37373737373'), NULL, NULL);
+INSERT INTO TB_EXAME (id_exame, tipo, solicitante_ref, resultado_conteudo, resultado_data_emissao)
+VALUES (6, 'Teste Hormonal', (SELECT REF(M) FROM TB_MEDICO M WHERE M.cpf_funcionario = '93939393939'), NULL, NULL);
+
+INSERT INTO TB_RESULTADO VALUES (TP_RESULTADO(1, 'Resultados normais.', SYSTIMESTAMP));
+INSERT INTO TB_RESULTADO VALUES (TP_RESULTADO(2, 'Alterações detectadas.', SYSTIMESTAMP));
+INSERT INTO TB_RESULTADO VALUES (TP_RESULTADO(3, 'Fratura identificada.', SYSTIMESTAMP));
+INSERT INTO TB_RESULTADO VALUES (TP_RESULTADO(4, 'Fratura detectada.', SYSTIMESTAMP));
+INSERT INTO TB_RESULTADO VALUES (TP_RESULTADO(5, 'Exames dentro do padrão.', SYSTIMESTAMP));
+INSERT INTO TB_RESULTADO VALUES (TP_RESULTADO(6, 'Alterações cutâneas identificadas.', SYSTIMESTAMP));
+
+INSERT INTO TB_DIAGNOSTICO (id_diagnostico, conteudo, tipo, data_hora_emissao, exame_ref)
+VALUES (1, 'Paciente saudável.', 'Clínico Geral', SYSTIMESTAMP, (SELECT REF(E) FROM TB_EXAME E WHERE E.id_exame = 1));
+INSERT INTO TB_DIAGNOSTICO (id_diagnostico, conteudo, tipo, data_hora_emissao, exame_ref)
+VALUES (2, 'Paciente com dor de cabeça.', 'Neurologia', SYSTIMESTAMP, (SELECT REF(E) FROM TB_EXAME E WHERE E.id_exame = 2));
+INSERT INTO TB_DIAGNOSTICO (id_diagnostico, conteudo, tipo, data_hora_emissao, exame_ref)
+VALUES (3, 'Fratura no braço direito.', 'Ortopédico', SYSTIMESTAMP, (SELECT REF(E) FROM TB_EXAME E WHERE E.id_exame = 3));
+INSERT INTO TB_DIAGNOSTICO (id_diagnostico, conteudo, tipo, data_hora_emissao, exame_ref)
+VALUES (4, 'Exames de sangue normais.', 'Laboratorial', SYSTIMESTAMP, (SELECT REF(E) FROM TB_EXAME E WHERE E.id_exame = 4));
+INSERT INTO TB_DIAGNOSTICO (id_diagnostico, conteudo, tipo, data_hora_emissao, exame_ref)
+VALUES (5, 'Lesão de pele leve.', 'Dermatológico', SYSTIMESTAMP, (SELECT REF(E) FROM TB_EXAME E WHERE E.id_exame = 5));
+INSERT INTO TB_DIAGNOSTICO (id_diagnostico, conteudo, tipo, data_hora_emissao, exame_ref)
+VALUES (6, 'Desequilíbrio hormonal.', 'Endocrinológico', SYSTIMESTAMP, (SELECT REF(E) FROM TB_EXAME E WHERE E.id_exame = 6));
+
+
+INSERT INTO TB_AGENDAMENTO (id_agendamento, status, tipo, data_hora, pac_conv_ref)
+VALUES (1, 'Confirmado', 'Consulta', SYSTIMESTAMP + INTERVAL '1' DAY, (SELECT REF(PC) FROM TB_PACIENTE_CONVENIO PC WHERE DEREF(PC.paciente_ref).cpf_paciente = '11111111111' AND DEREF(PC.convenio_ref).id_convenio = 1));
+INSERT INTO TB_AGENDAMENTO (id_agendamento, status, tipo, data_hora, pac_conv_ref)
+VALUES (2, 'Pendente', 'Exame', SYSTIMESTAMP + INTERVAL '2' DAY, (SELECT REF(PC) FROM TB_PACIENTE_CONVENIO PC WHERE DEREF(PC.paciente_ref).cpf_paciente = '22222222222' AND DEREF(PC.convenio_ref).id_convenio = 2));
+INSERT INTO TB_AGENDAMENTO (id_agendamento, status, tipo, data_hora, pac_conv_ref)
+VALUES (3, 'Confirmado', 'Raio-X', SYSTIMESTAMP + INTERVAL '1' DAY, (SELECT REF(PC) FROM TB_PACIENTE_CONVENIO PC WHERE DEREF(PC.paciente_ref).cpf_paciente = '55555555555' AND DEREF(PC.convenio_ref).id_convenio = 4));
+INSERT INTO TB_AGENDAMENTO (id_agendamento, status, tipo, data_hora, pac_conv_ref)
+VALUES (4, 'Pendente', 'Exame de Sangue', SYSTIMESTAMP + INTERVAL '2' DAY, (SELECT REF(PC) FROM TB_PACIENTE_CONVENIO PC WHERE DEREF(PC.paciente_ref).cpf_paciente = '66666666666' AND DEREF(PC.convenio_ref).id_convenio = 5));
+INSERT INTO TB_AGENDAMENTO (id_agendamento, status, tipo, data_hora, pac_conv_ref)
+VALUES (5, 'Confirmado', 'Biópsia', SYSTIMESTAMP + INTERVAL '3' DAY, (SELECT REF(PC) FROM TB_PACIENTE_CONVENIO PC WHERE DEREF(PC.paciente_ref).cpf_paciente = '77777777777' AND DEREF(PC.convenio_ref).id_convenio = 6));
+INSERT INTO TB_AGENDAMENTO (id_agendamento, status, tipo, data_hora, pac_conv_ref)
+VALUES (6, 'Confirmado', 'Teste Hormonal', SYSTIMESTAMP + INTERVAL '4' DAY, (SELECT REF(PC) FROM TB_PACIENTE_CONVENIO PC WHERE DEREF(PC.paciente_ref).cpf_paciente = '88888888888' AND DEREF(PC.convenio_ref).id_convenio = 1));
+
+INSERT INTO TB_REALIZA VALUES (TP_REALIZA(1, '95959595959', '11111111111', 1, SYSTIMESTAMP - INTERVAL '2' HOUR, SYSTIMESTAMP));
+INSERT INTO TB_REALIZA VALUES (TP_REALIZA(2, '34343434343', '22222222222', 2, SYSTIMESTAMP - INTERVAL '3' HOUR, SYSTIMESTAMP));
+INSERT INTO TB_REALIZA VALUES (TP_REALIZA(3, '95959595959', '55555555555', 4, SYSTIMESTAMP - INTERVAL '1' HOUR, SYSTIMESTAMP));
+INSERT INTO TB_REALIZA VALUES (TP_REALIZA(4, '34343434343', '66666666666', 5, SYSTIMESTAMP - INTERVAL '1' HOUR, SYSTIMESTAMP));
+INSERT INTO TB_REALIZA VALUES (TP_REALIZA(5, '34343434343', '77777777777', 6, SYSTIMESTAMP - INTERVAL '2' HOUR, SYSTIMESTAMP));
+INSERT INTO TB_REALIZA VALUES (TP_REALIZA(6, '95959595959', '88888888888', 1, SYSTIMESTAMP - INTERVAL '3' HOUR, SYSTIMESTAMP));
+
+INSERT INTO TB_DESIGNA VALUES (TP_DESIGNA(1, '31313131313', '101'));
+INSERT INTO TB_DESIGNA VALUES (TP_DESIGNA(2, '32323232323', '102'));
+INSERT INTO TB_DESIGNA VALUES (TP_DESIGNA(3, '31313131313', '104'));
+INSERT INTO TB_DESIGNA VALUES (TP_DESIGNA(4, '32323232323', '105'));
+INSERT INTO TB_DESIGNA VALUES (TP_DESIGNA(5, '31313131313', '106'));
+INSERT INTO TB_DESIGNA VALUES (TP_DESIGNA(6, '32323232323', '107'));
+
+INSERT INTO TB_AUXILIA VALUES (
+  (SELECT REF(A) FROM TB_ATENDENTE A WHERE A.cpf_funcionario = '31313131313'),
+  (SELECT REF(B) FROM TB_ATENDENTE B WHERE B.cpf_funcionario = '32323232323')
+);
+INSERT INTO TB_AUXILIA VALUES (
+  (SELECT REF(A) FROM TB_ATENDENTE A WHERE A.cpf_funcionario = '31313131313'),
+  (SELECT REF(B) FROM TB_ENFERMEIRO B WHERE B.cpf_funcionario = '34343434343')
+);
+INSERT INTO TB_AUXILIA VALUES (
+  (SELECT REF(A) FROM TB_ATENDENTE A WHERE A.cpf_funcionario = '32323232323'),
+  (SELECT REF(B) FROM TB_MEDICO B WHERE B.cpf_funcionario = '35353535353')
+);
+INSERT INTO TB_AUXILIA VALUES (
+  (SELECT REF(A) FROM TB_ATENDENTE A WHERE A.cpf_funcionario = '32323232323'),
+  (SELECT REF(B) FROM TB_MEDICO B WHERE B.cpf_funcionario = '36363636363')
+);
+INSERT INTO TB_AUXILIA VALUES (
+  (SELECT REF(A) FROM TB_ATENDENTE A WHERE A.cpf_funcionario = '31313131313'),
+  (SELECT REF(B) FROM TB_MEDICO B WHERE B.cpf_funcionario = '37373737373')
+);
+INSERT INTO TB_AUXILIA VALUES (
+  (SELECT REF(A) FROM TB_ATENDENTE A WHERE A.cpf_funcionario = '31313131313'),
+  (SELECT REF(B) FROM TB_MEDICO B WHERE B.cpf_funcionario = '38383838383')
+);
+
+INSERT INTO TB_ANALISE VALUES (TP_ANALISE('91919191919', 1, 1, 'Tudo ok.'));
+INSERT INTO TB_ANALISE VALUES (TP_ANALISE('92929292929', 2, 2, 'Requer atenção.'));
+INSERT INTO TB_ANALISE VALUES (TP_ANALISE('93939393939', 3, 3, 'Fratura confirmada.'));
+INSERT INTO TB_ANALISE VALUES (TP_ANALISE('35353535353', 4, 4, 'Fratura confirmada.'));
+INSERT INTO TB_ANALISE VALUES (TP_ANALISE('36363636363', 5, 5, 'Exames normais.'));
+INSERT INTO TB_ANALISE VALUES (TP_ANALISE('37373737373', 6, 6, 'Lesão superficial.'));
