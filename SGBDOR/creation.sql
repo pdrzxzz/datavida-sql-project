@@ -1,5 +1,9 @@
 CREATE OR REPLACE TYPE TP_TELEFONES AS VARRAY(5) OF VARCHAR2(15);
-CREATE OR REPLACE TYPE TP_ESPECIALIDADES AS TABLE OF VARCHAR2(100);
+
+CREATE OR REPLACE TYPE TP_ESPECIALIDADE AS OBJECT (
+	nome VARCHAR2(100)
+);
+CREATE OR REPLACE TYPE TP_LISTA_ESPECIALIDADES AS TABLE OF TP_ESPECIALIDADE;
 
 CREATE OR REPLACE TYPE TP_ENDERECO AS OBJECT (
 	cep			    VARCHAR2(8),
@@ -17,7 +21,7 @@ CREATE OR REPLACE TYPE TP_FUNCIONARIO AS OBJECT (
 	endereco		    TP_ENDERECO,
 	telefones		    TP_TELEFONES,
   MEMBER FUNCTION get_identificador_formatado RETURN VARCHAR2
-) NOT INSTANTIBLE NOT FINAL;
+) NOT INSTANTIABLE NOT FINAL;
 
 CREATE OR REPLACE TYPE TP_ATENDENTE UNDER TP_FUNCIONARIO (
 ) FINAL;
@@ -29,21 +33,21 @@ CREATE TABLE TB_ATENDENTE OF TP_ATENDENTE (
 
 CREATE OR REPLACE TYPE TP_ENFERMEIRO UNDER TP_FUNCIONARIO (
 	registro_coren	VARCHAR2(20),
-  especialidades	TP_ESPECIALIDADES
+  especialidades	TP_LISTA_ESPECIALIDADES
 );
 
-CREATE TABLE TB_ENFERMEIRO OF TP_ENFERMEIRO (
+CREATE TABLE TB_ENFERMEIRO OF TP_ENFERMEIRO NESTED TABLE especialidades STORE AS TB_ESPECIALIDADES (
   CONSTRAINT tb_enfermeiro_pk PRIMARY KEY (cpf_funcionario),
   CONSTRAINT tb_enfermeiro_coren_uk UNIQUE (registro_coren)
 );
 
 CREATE OR REPLACE TYPE TP_MEDICO UNDER TP_FUNCIONARIO (
 	crm_medico 	    VARCHAR(20),
-	especialidades	TP_ESPECIALIDADES
+	especialidades	TP_LISTA_ESPECIALIDADES
   FINAL MEMBER FUNCTION get_crm_formatado RETURN VARCHAR2
 );
 
-CREATE TABLE TB_MEDICO OF TP_MEDICO (
+CREATE TABLE TB_MEDICO OF TP_MEDICO NESTED TABLE especialidades STORE AS TB_ESPECIALIDADES (
   CONSTRAINT tb_medico_pk PRIMARY KEY (cpf_funcionario)
   CONSTRAINT tb_medico_crm_uk UNIQUE (crm_medico)
 );
@@ -173,40 +177,40 @@ CREATE TABLE TB_AUXILIA OF TP_AUXILIA (
 );
 
 CREATE OR REPLACE TYPE TP_REALIZA AS OBJECT (
-	id_exame				        INT,
-	cpf_enfermeiro		      CHAR(11),
-	cpf_paciente		      CHAR(11),
-	id_convenio		      INT,
-	data_hora_inicio	TIMESTAMP,
-	data_hora_fim			TIMESTAMP
+	id_exame				      INT,
+	enfermeiro_ref		    REF TP_ENFERMEIRO,
+	paciente_ref		      REF TP_PACIENTE,
+	convenio_ref		      REF TP_CONVENIO,
+	data_hora_inicio			TIMESTAMP,
+	data_hora_fim					TIMESTAMP
 );
 
 CREATE TABLE TB_REALIZA OF TP_REALIZA (
   CONSTRAINT tb_realiza_pk PRIMARY KEY (id_exame),
-  SCOPE FOR (cpf_enfermeiro, cpf_paciente, id_convenio) IS TB_ENFERMEIRO, TB_PACIENTE, TB_CONVENIO
+  SCOPE FOR (enfermeiro_ref, paciente_ref, convenio_ref) IS TB_ENFERMEIRO, TB_PACIENTE, TB_CONVENIO
 );
 
 CREATE OR REPLACE TYPE TP_DESIGNA AS OBJECT (
-	id_exame				        INT,
-	cpf_atendente		      CHAR(11),
-	numero_sala			      VARCHAR(3)
+	exame_ref				      REF TP_EXAME,
+	atendente_ref		      REF TP_ATENDENTE,
+	sala_ref			        REF TP_SALA_EXAME
 );
 
 CREATE TABLE TB_DESIGNA OF TP_DESIGNA (
-  CONSTRAINT tb_designa_pk PRIMARY KEY (id_exame),
-  SCOPE FOR (cpf_atendente, numero_sala) IS TB_ATENDENTE, TB_SALA_EXAME
+  CONSTRAINT tb_designa_pk PRIMARY KEY (exame_ref),
+  SCOPE FOR (atendente_ref, sala_ref, exame_ref) IS TB_ATENDENTE, TB_SALA_EXAME, TB_EXAME
 );
 
 CREATE OR REPLACE TYPE TP_ANALISE AS OBJECT (
-	cpf_medico		      CHAR(11),
+	medico_ref		      		REF TP_MEDICO,
 	id_exame				        INT,
 	id_diagnostico		      INT,
 	conteudo					      VARCHAR(1000)
 );
 
 CREATE TABLE TB_ANALISE OF TP_ANALISE (
-  CONSTRAINT tb_analise_pk PRIMARY KEY (cpf_medico, id_exame),
-  SCOPE FOR (cpf_medico, id_diagnostico) IS TB_MEDICO, TB_DIAGNOSTICO
+  CONSTRAINT tb_analise_pk PRIMARY KEY (medico_ref, id_exame),
+  SCOPE FOR (medico_ref, id_diagnostico) IS TB_MEDICO, TB_DIAGNOSTICO
 );
 
 CREATE OR REPLACE TYPE BODY TP_AGENDAMENTO AS
